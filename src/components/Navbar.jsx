@@ -1,20 +1,11 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 10)
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
 
   return (
     <nav
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-white/90 backdrop-blur-md shadow-md" : "bg-transparent"
-      }`}
+      className="fixed top-0 w-full z-50 transition-all duration-300 backdrop-blur-md shadow-md"
     >
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         {/* Brand */}
@@ -27,22 +18,22 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#about" className="text-gray-700 hover:text-primary transition-colors">
+          <a href="#about" className="text-text hover:text-primary transition-colors">
             About
           </a>
-          <a href="#services" className="text-gray-700 hover:text-primary transition-colors">
+          <a href="#services" className="text-text hover:text-primary transition-colors">
             Services
           </a>
-          <a href="#advantages" className="text-gray-700 hover:text-primary transition-colors">
+          <a href="#advantages" className="text-text hover:text-primary transition-colors">
             Why Us
           </a>
-          <a href="#program" className="text-gray-700 hover:text-primary transition-colors">
+          <a href="#program" className="text-text hover:text-primary transition-colors">
             Startup Program
           </a>
-          <a href="#product" className="text-gray-700 hover:text-primary transition-colors">
+          <a href="#product" className="text-text hover:text-primary transition-colors">
             Products
           </a>
-          <a href="#contact" className="text-gray-700 hover:text-primary transition-colors">
+          <a href="#contact" className="text-text hover:text-primary transition-colors">
             Contact
           </a>
         </div>
@@ -57,7 +48,7 @@ const Navbar = () => {
           </a>
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden w-10 h-10 flex items-center justify-center text-gray-700"
+            className="md:hidden w-10 h-10 flex items-center justify-center text-text"
           >
             <i className={isOpen ? "ri-close-line ri-lg" : "ri-menu-line ri-lg"}></i>
           </button>
@@ -71,22 +62,22 @@ const Navbar = () => {
         }`}
       >
         <div className="container mx-auto px-6 py-4 flex flex-col space-y-4">
-          <a href="#about" className="text-gray-700 hover:text-primary transition-colors">
+          <a href="#about" className="text-text hover:text-primary transition-colors">
             About
           </a>
-          <a href="#services" className="text-gray-700 hover:text-primary transition-colors">
+          <a href="#services" className="text-text hover:text-primary transition-colors">
             Services
           </a>
-          <a href="#advantages" className="text-gray-700 hover:text-primary transition-colors">
+          <a href="#advantages" className="text-text hover:text-primary transition-colors">
             Why Us
           </a>
-          <a href="#program" className="text-gray-700 hover:text-primary transition-colors">
+          <a href="#program" className="text-text hover:text-primary transition-colors">
             Startup Program
           </a>
-          <a href="#product" className="text-gray-700 hover:text-primary transition-colors">
+          <a href="#product" className="text-text hover:text-primary transition-colors">
             Products
           </a>
-          <a href="#contact" className="text-gray-700 hover:text-primary transition-colors">
+          <a href="#contact" className="text-text hover:text-primary transition-colors">
             Contact
           </a>
           <a
