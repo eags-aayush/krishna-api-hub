@@ -35,7 +35,7 @@ const Advantage = () => {
   return (
     <section
       id="advantages"
-      className="py-24 relative bg-gradient-to-b from-gray-900 via-black to-gray-900 text-white overflow-hidden"
+      className="py-24 relative text-text"
     >
       {/* Background Glow */}
       <div className="absolute inset-0 -z-10">
@@ -60,7 +60,7 @@ const Advantage = () => {
           {advantageData.map((item, index) => (
             <div
               key={index}
-              className="bg-white/10 backdrop-blur-lg border border-white/10 p-8 rounded-2xl shadow-lg hover:shadow-primary/30 transition-all transform hover:-translate-y-2 hover:scale-[1.02]"
+              className="bg-white/10 backdrop-blur-lg border border-white/10 p-8 rounded-2xl shadow-lg hover:shadow-text/30 transition-all transform hover:-translate-y-2 hover:scale-[1.02]"
             >
               <div className="w-14 h-14 bg-gradient-to-r from-primary to-purple-500 rounded-xl flex items-center justify-center mb-6">
                 <i className={`${item.icon} ri-xl text-white`}></i>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Form = () => {
   return (
-    <section id="contact" className="py-24 relative bg-gradient-to-b from-gray-900 via-black to-gray-900 text-white overflow-hidden">
+    <section id="contact" className="py-24 relative text-text">
       {/* Background Glow */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute w-[500px] h-[500px] bg-primary/20 rounded-full blur-[180px] -top-40 left-20 animate-pulse"></div>

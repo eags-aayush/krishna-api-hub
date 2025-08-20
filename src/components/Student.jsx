@@ -4,7 +4,7 @@ const Student = () => {
   return (
     <section
       id="program"
-      className="py-24 relative bg-gradient-to-b from-gray-900 via-black to-gray-900 text-white overflow-hidden"
+      className="py-24 relative text-text"
     >
       {/* Background Glow */}
       <div className="absolute inset-0 -z-10">
