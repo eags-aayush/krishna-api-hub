@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)https://www.krishnaapihub.com/ -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Krishna API HUB - Scalable, secure, and efficient backend solutions at an affordable cost.">
+  <meta name="keywords"
+    content="API development, Web development, Performance optimization, Automation, System maintenance, Affordable services">
+  <title>Krishna API HUB - Supercharge Your Startup Backend</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./Krishna API HUB - Supercharge Your Startup Backend_files/css2" rel="stylesheet">
+  <link href="./Krishna API HUB - Supercharge Your Startup Backend_files/css2(1)" rel="stylesheet">
+  <link rel="stylesheet" href="./Krishna API HUB - Supercharge Your Startup Backend_files/remixicon.min.css">
+  <link href="./Krishna API HUB - Supercharge Your Startup Backend_files/output.css" rel="stylesheet">
+  <script>tailwind.config = { theme: { extend: { colors: { primary: '#4f46e5', secondary: '#6366f1' }, borderRadius: { 'none': '0px', 'sm': '4px', DEFAULT: '8px', 'md': '12px', 'lg': '16px', 'xl': '20px', '2xl': '24px', '3xl': '32px', 'full': '9999px', 'button': '8px' } } } }</script>
+  <style>
+    :where([class^="ri-"])::before {
+      content: "\f3c2";
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .hero-section {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.5) 75%, rgba(255, 255, 255, 0.1) 100%), url('https://readdy.ai/api/search-image?query=abstract%20digital%20technology%20background%20with%20API%20connections%2C%20cloud%20computing%2C%20code%20fragments%2C%20and%20network%20nodes%2C%20soft%20blue%20and%20purple%20gradient%2C%20minimalist%20clean%20design%20with%20empty%20space%20on%20left%20side%20for%20text&width=1920&height=800&seq=hero123&orientation=landscape');
+      background-size: cover;
+      background-position: center right;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+
+    input:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #4f46e5;
+    }
+
+    .custom-checkbox {
+      position: relative;
+      padding-left: 30px;
+      cursor: pointer;
+    }
+
+    .custom-checkbox input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 20px;
+      width: 20px;
+      background-color: #fff;
+      border: 2px solid #e5e7eb;
+      border-radius: 4px;
+    }
+
+    .custom-checkbox:hover input~.checkmark {
+      border-color: #4f46e5;
+    }
+
+    .custom-checkbox input:checked~.checkmark {
+      background-color: #4f46e5;
+      border-color: #4f46e5;
+    }
+
+    .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+
+    .custom-checkbox input:checked~.checkmark:after {
+      display: block;
+    }
+
+    .custom-checkbox .checkmark:after {
+      left: 6px;
+      top: 2px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+
+    .custom-switch {
+      position: relative;
+      display: inline-block;
+      width: 50px;
+      height: 24px;
+    }
+
+    .custom-switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .switch-slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #e5e7eb;
+      transition: .4s;
+      border-radius: 34px;
+    }
+
+    .switch-slider:before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 18px;
+      left: 3px;
+      bottom: 3px;
+      background-color: white;
+      transition: .4s;
+      border-radius: 50%;
+    }
+
+    input:checked+.switch-slider {
+      background-color: #4f46e5;
+    }
+
+    input:checked+.switch-slider:before {
+      transform: translateX(26px);
+    }
+
+    .google-form-container iframe {
+      height: 1520px;
+      /* Default height for larger screens */
+      width: 640px;
+    }
+
+    @media (max-width: 425px) {
+
+      .google-form-container iframe {
+        height: 1720px;
+        /* Adjust only the iframe height for mobile */
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-white">
+  <!-- Header -->
+  <header class="fixed w-full bg-white shadow-sm z-50">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="https://www.krishnaapihub.com/#" class="text-2xl font-[&#39;Pacifico&#39;] text-primary">Krishna API
+        HUB</a>
+      <nav class="hidden md:flex items-center space-x-8">
+        <a href="https://www.krishnaapihub.com/#about"
+          class="text-gray-700 hover:text-primary transition-colors">About</a>
+        <a href="https://www.krishnaapihub.com/#services"
+          class="text-gray-700 hover:text-primary transition-colors">Services</a>
+        <a href="https://www.krishnaapihub.com/#advantages"
+          class="text-gray-700 hover:text-primary transition-colors">Why Us</a>
+        <a href="https://www.krishnaapihub.com/#program"
+          class="text-gray-700 hover:text-primary transition-colors">Startup Program</a>
+        <a href="https://www.krishnaapihub.com/#contact"
+          class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+        <a href="https://www.krishnaapihub.com/#product"
+          class="text-gray-700 hover:text-primary transition-colors">Products</a>
+      </nav>
+      <div class="flex items-center space-x-4">
+        <a href="https://www.krishnaapihub.com/#contact"
+          class="hidden md:block px-5 py-2 bg-primary text-white font-medium !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">Get
+          Started</a>
+        <button class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700" id="mobileMenuButton">
+          <i class="ri-menu-line ri-lg"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="md:hidden hidden bg-white w-full shadow-md" id="mobileMenu">
+      <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
+        <a href="https://www.krishnaapihub.com/#about"
+          class="text-gray-700 py-2 hover:text-primary transition-colors">About</a>
+        <a href="https://www.krishnaapihub.com/#services"
+          class="text-gray-700 py-2 hover:text-primary transition-colors">Services</a>
+        <a href="https://www.krishnaapihub.com/#advantages"
+          class="text-gray-700 py-2 hover:text-primary transition-colors">Why Us</a>
+        <a href="https://www.krishnaapihub.com/#program"
+          class="text-gray-700 py-2 hover:text-primary transition-colors">Startup Program</a>
+        <a href="https://www.krishnaapihub.com/#contact"
+          class="text-gray-700 py-2 hover:text-primary transition-colors">Contact</a>
+        <a href="https://www.krishnaapihub.com/#contact"
+          class="block px-5 py-2 bg-primary text-white font-medium text-center !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">Get
+          Started</a>
+        <a href="https://www.krishnaapihub.com/#product"
+          class="text-gray-700 hover:text-primary transition-colors">Products</a>
+      </div>
+    </div>
+  </header>
+  <!-- Hero Section -->
+  <section class="hero-section min-h-[700px] flex items-center pt-24">
+    <div class="container mx-auto px-6 w-full">
+      <div class="max-w-2xl">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">Supercharge Your Startup Backend
+          with Krishna API HUB</h1>
+        <p class="text-xl text-gray-700 mb-8">Scalable APIs, AI integration, fast delivery. No upfront development cost
+          for eligible startups.</p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="https://www.krishnaapihub.com/#contact"
+            class="px-8 py-3 bg-primary text-white font-medium !rounded-button hover:bg-primary/90 transition-all transform hover:-translate-y-1 shadow-lg hover:shadow-xl whitespace-nowrap">Get
+            Started Free</a>
+          <a href="https://www.krishnaapihub.com/#services"
+            class="px-8 py-3 bg-white text-primary border border-primary font-medium !rounded-button hover:bg-gray-50 transition-all transform hover:-translate-y-1 whitespace-nowrap">Explore
+            Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Your Idea, Our Code. Let's Build Together.</h2>
+        <div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
+        <p class="max-w-3xl mx-auto text-lg text-gray-700">
+          At Krishna API HUB, we empower startups and student entrepreneurs to transform their ideas into robust digital
+          products without the burden of high development costs. Our mission is to democratize technology access for
+          early-stage innovators.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+          <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+            <i class="ri-code-s-slash-line ri-xl text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Technical Excellence</h3>
+          <p class="text-gray-700">We build scalable, maintainable backend systems that grow with your business needs.
+          </p>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+          <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+            <i class="ri-rocket-line ri-xl text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Startup Focused</h3>
+          <p class="text-gray-700">Our pricing and delivery models are specifically designed for early-stage startups
+            and student entrepreneurs.</p>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+          <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+            <i class="ri-shield-check-line ri-xl text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Reliable Partnership</h3>
+          <p class="text-gray-700">We're not just vendors; we're partners in your journey from MVP to market success.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Services Section -->
+  <section id="services" class="py-20">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Services</h2>
+        <div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
+        <p class="max-w-3xl mx-auto text-lg text-gray-700">
+          We provide comprehensive backend solutions tailored to your startup's unique needs.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Service 1 -->
+        <div class="service-card bg-white p-8 rounded-lg shadow-md transition-all duration-300">
+          <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+            <i class="ri-api-line ri-xl text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Scalable API Development</h3>
+          <p class="text-gray-700">Custom RESTful and GraphQL APIs built for performance and scalability, with
+            comprehensive documentation.</p>
+        </div>
+        <!-- Service 2 -->
+        <div class="service-card bg-white p-8 rounded-lg shadow-md transition-all duration-300">
+          <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+            <i class="ri-robot-line ri-xl text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">AI &amp; ML Integration</h3>
+          <p class="text-gray-700">Implement AI capabilities into your product with our expertise in machine learning
+            model integration and API development.</p>
+        </div>
+        <!-- Service 3 -->
+        <div class="service-card bg-white p-8 rounded-lg shadow-md transition-all duration-300">
+          <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+            <i class="ri-notification-3-line ri-xl text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Automation &amp; Notifications</h3>
+          <p class="text-gray-700">Streamline operations with automated workflows, email systems, and multi-channel
+            notification services.</p>
+        </div>
+        <!-- Service 4 -->
+        <div class="service-card bg-white p-8 rounded-lg shadow-md transition-all duration-300">
+          <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+            <i class="ri-cloud-line ri-xl text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Secure Cloud Infrastructure</h3>
+          <p class="text-gray-700">Robust, secure, and cost-effective cloud solutions designed for startup scalability
+            and compliance needs.</p>
+        </div>
+        <!-- Service 5 -->
+        <div class="service-card bg-white p-8 rounded-lg shadow-md transition-all duration-300">
+          <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+            <i class="ri-message-3-line ri-xl text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Chatbot Development</h3>
+          <p class="text-gray-700">Intelligent conversational interfaces powered by NLP to enhance customer engagement
+            and support.</p>
+        </div>
+        <!-- Service 6 -->
+        <div class="service-card bg-white p-8 rounded-lg shadow-md transition-all duration-300">
+          <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+            <i class="ri-code-box-line ri-xl text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Full-Stack Web Applications</h3>
+          <p class="text-gray-700">End-to-end web application development with responsive frontend and powerful backend
+            systems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Advantages Section -->
+  <section id="advantages" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Why Choose Krishna API HUB</h2>
+        <div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
+        <p class="max-w-3xl mx-auto text-lg text-gray-700">
+          Empowering startups with cutting-edge technology solutions and dedicated support at every step.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-all group">
+          <div
+            class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+            <i class="ri-rocket-line ri-xl text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Built for Startups</h3>
+          <p class="text-gray-700">Designed specifically to support early-stage ventures and student innovators with
+            flexible pricing and scalable solutions.</p>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-all group">
+          <div
+            class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+            <i class="ri-shield-check-line ri-xl text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Scalable &amp; Secure</h3>
+          <p class="text-gray-700">Robust architecture that grows with your business, ensuring your data stays protected
+            with enterprise-grade security.</p>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-all group">
+          <div
+            class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+            <i class="ri-timer-flash-line ri-xl text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Fast Turnaround</h3>
+          <p class="text-gray-700">Rapid development cycles to get your MVP or product to market quickly without
+            compromising on quality.</p>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-all group">
+          <div
+            class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+            <i class="ri-customer-service-line ri-xl text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Full Support</h3>
+          <p class="text-gray-700">From idea to deployment, our team helps you choose the right tech stack and maintain
+            your product for optimal performance.</p>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-all group">
+          <div
+            class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+            <i class="ri-brain-line ri-xl text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">AI &amp; Automation Ready</h3>
+          <p class="text-gray-700">Built-in support for AI integration, machine learning models, and automated workflows
+            to enhance your product capabilities.</p>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-all group">
+          <div
+            class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+            <i class="ri-money-dollar-circle-line ri-xl text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Startup Friendly Pricing</h3>
+          <p class="text-gray-700">Flexible payment plans with zero upfront costs for eligible startups. Pay as you grow
+            and succeed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Student/Startup Program -->
+  <section id="program" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="max-w-5xl mx-auto bg-gradient-to-r from-primary/10 to-secondary/10 rounded-xl p-10 shadow-lg">
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Student &amp; Startup Program</h2>
+            <p class="text-gray-700 mb-6">
+              We believe in supporting the next generation of innovators. Our special program for students and
+              early-stage startups offers significant advantages to help you get your idea off the ground.
+            </p>
+            <div class="space-y-4 mb-8">
+              <div class="flex items-start">
+                <div class="flex-shrink-0 w-6 h-6 flex items-center justify-center mr-2 mt-0.5">
+                  <i class="ri-check-line ri-lg text-primary"></i>
+                </div>
+                <p class="text-gray-700">Zero upfront development cost for qualified startups</p>
+              </div>
+              <div class="flex items-start">
+                <div class="flex-shrink-0 w-6 h-6 flex items-center justify-center mr-2 mt-0.5">
+                  <i class="ri-check-line ri-lg text-primary"></i>
+                </div>
+                <p class="text-gray-700">Revenue-based payment plans</p>
+              </div>
+              <div class="flex items-start">
+                <div class="flex-shrink-0 w-6 h-6 flex items-center justify-center mr-2 mt-0.5">
+                  <i class="ri-check-line ri-lg text-primary"></i>
+                </div>
+                <p class="text-gray-700">Technical mentorship and business guidance</p>
+              </div>
+              <div class="flex items-start">
+                <div class="flex-shrink-0 w-6 h-6 flex items-center justify-center mr-2 mt-0.5">
+                  <i class="ri-check-line ri-lg text-primary"></i>
+                </div>
+                <p class="text-gray-700">Priority access to our development team</p>
+              </div>
+            </div>
+            <a href="https://www.krishnaapihub.com/#contact"
+              class="inline-block px-8 py-3 bg-primary text-white font-medium !rounded-button hover:bg-primary/90 transition-all transform hover:-translate-y-1 shadow-md hover:shadow-lg whitespace-nowrap">Apply
+              Now</a>
+          </div>
+          <div class="hidden md:block">
+            <img src="./Krishna API HUB - Supercharge Your Startup Backend_files/search-image"
+              alt="Student Entrepreneurs" class="rounded-lg shadow-lg object-cover w-full h-full object-top">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonials/Clients -->
+  <!--
+<section class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Trusted By Innovators</h2>
+<div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
+<p class="max-w-3xl mx-auto text-lg text-gray-700">
+We've helped startups across various industries build robust backend systems.
+</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+<div class="flex items-center justify-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="text-center">
+<div class="w-12 h-12 mx-auto flex items-center justify-center mb-3">
+<i class="ri-heart-pulse-line ri-2x text-gray-400"></i>
+</div>
+<p class="text-gray-700 font-medium">HealthTech</p>
+</div>
+</div>
+<div class="flex items-center justify-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="text-center">
+<div class="w-12 h-12 mx-auto flex items-center justify-center mb-3">
+<i class="ri-bank-line ri-2x text-gray-400"></i>
+</div>
+<p class="text-gray-700 font-medium">FinTech</p>
+</div>
+</div>
+<div class="flex items-center justify-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="text-center">
+<div class="w-12 h-12 mx-auto flex items-center justify-center mb-3">
+<i class="ri-book-open-line ri-2x text-gray-400"></i>
+</div>
+<p class="text-gray-700 font-medium">EdTech</p>
+</div>
+</div>
+<div class="flex items-center justify-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="text-center">
+<div class="w-12 h-12 mx-auto flex items-center justify-center mb-3">
+<i class="ri-shopping-bag-line ri-2x text-gray-400"></i>
+</div>
+<p class="text-gray-700 font-medium">E-commerce</p>
+</div>
+</div>
+</div>
+<div class="mt-16 max-w-4xl mx-auto bg-white rounded-lg shadow-md p-8">
+<div class="flex flex-col md:flex-row items-center gap-8">
+<div class="w-20 h-20 rounded-full overflow-hidden flex-shrink-0">
+<img src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20a%20young%20female%20startup%20founder%20with%20a%20confident%20smile%2C%20neutral%20background%2C%20professional%20attire&width=200&height=200&seq=testimonial123&orientation=squarish" alt="Client" class="w-full h-full object-cover object-top">
+</div>
+<div>
+<p class="text-gray-700 italic mb-4">"Krishna API HUB was instrumental in bringing our healthcare platform to life. Their technical expertise and startup-friendly approach allowed us to launch our MVP quickly and scale as we grew. Highly recommended for any early-stage startup."</p>
+<div>
+<p class="font-semibold text-gray-900">Sarah Johnson</p>
+<p class="text-gray-600 text-sm">Co-founder, MediConnect</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section> -->
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Let's Build Your Backend</h2>
+        <div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
+        <p class="max-w-3xl mx-auto text-lg text-gray-700">
+          Ready to supercharge your startup? Get in touch to discuss your project or schedule a free consultation call.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <div>
+          <!--
+<section id="getInTouch" class="container my-5 google-form-container" style="display: flex; justify-content: space-evenly;">
+		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfCSQEyAFBDkEHKRXOmG9Q22HGi7MNQigc_rU34XzNidlvx3A/viewform?embedded=true"  height="1520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</section>
+-->
+          <form id="contactForm" class="space-y-6" action="https://formspree.io/f/xrbknpzw" method="POST">
+            <div>
+              <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+              <input type="text" id="name" name="name"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/20"
+                placeholder="Your name">
+            </div>
+            <div>
+              <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+              <input type="email" id="email" name="email"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/20"
+                placeholder="your.email@example.com">
+            </div>
+            <div>
+              <label for="phonenumber" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+              <input type="text" id="phonenumber" name="phonenumber"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/20"
+                placeholder="+ 91">
+            </div>
+            <div>
+              <label for="projectType" class="block text-gray-700 font-medium mb-2">Project Type</label>
+              <div class="relative">
+                <select id="projectType" name="projectType"
+                  class="w-full appearance-none px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/20 bg-white pr-8">
+                  <option value="" disabled="" selected="">Select your project type</option>
+                  <option value="mvp">MVP Development</option>
+                  <option value="api">API Development</option>
+                  <option value="ai">AI Integration</option>
+                  <option value="chatbot">Chatbot Development</option>
+                  <option value="other">Other</option>
+                </select>
+                <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+                  <i class="ri-arrow-down-s-line text-gray-400"></i>
+                </div>
+              </div>
+            </div>
+            <div>
+              <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+              <textarea id="message" name="message" rows="4"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/20"
+                placeholder="Tell us about your project..."></textarea>
+            </div>
+            <div class="flex items-center">
+              <label class="custom-checkbox text-gray-700">
+                <input type="checkbox" name="subscribe">
+                <span class="checkmark"></span>
+                Subscribe to our newsletter for startup tips and resources
+              </label>
+            </div>
+            <button type="submit"
+              class="w-full px-6 py-3 bg-primary text-white font-medium !rounded-button hover:bg-primary/90 transition-all shadow-md hover:shadow-lg whitespace-nowrap">Schedule
+              a Free Call</button>
+          </form>
+
+        </div>
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <h3 class="text-xl font-semibold text-gray-900 mb-6">How We Work</h3>
+          <div class="space-y-8">
+            <div class="flex">
+              <div class="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                <span class="font-semibold text-primary">1</span>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900 mb-1">Initial Consultation</h4>
+                <p class="text-gray-700">We'll discuss your idea, requirements, and goals to understand your vision.</p>
+              </div>
+            </div>
+            <div class="flex">
+              <div class="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                <span class="font-semibold text-primary">2</span>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900 mb-1">Proposal &amp; Planning</h4>
+                <p class="text-gray-700">We'll create a detailed proposal with timeline, features, and flexible payment
+                  options.</p>
+              </div>
+            </div>
+            <div class="flex">
+              <div class="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                <span class="font-semibold text-primary">3</span>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900 mb-1">Development &amp; Delivery</h4>
+                <p class="text-gray-700">Our team builds your solution with regular updates and transparent
+                  communication.</p>
+              </div>
+            </div>
+            <div class="flex">
+              <div class="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                <span class="font-semibold text-primary">4</span>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900 mb-1">Ongoing Support</h4>
+                <p class="text-gray-700">We provide maintenance, updates, and scaling support as your startup grows.</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-8 pt-8 border-t border-gray-200">
+            <h4 class="font-semibold text-gray-900 mb-4">Contact Information</h4>
+            <div class="space-y-3">
+              <div class="flex items-center">
+                <div class="w-8 h-8 flex items-center justify-center mr-3 text-primary">
+                  <i class="ri-mail-line"></i>
+                </div>
+                <p class="text-gray-700"> <a href="mailto:sushmat6699@gmail.com">sushmat6699@gmail.com</a></p>
+              </div>
+              <!--<div class="flex items-center">
+<div class="w-8 h-8 flex items-center justify-center mr-3 text-primary">
+<i class="ri-phone-line"></i>
+</div>
+<p class="text-gray-700">+1 (555) 123-4567</p>
+</div> -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="product" class="py-20">
+      <div class="container mx-auto px-6">
+
+        <div class="text-center mb-16">
+
+          <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Product</h2>
+            <div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">AI Gateway</h2>
+
+            <p class="max-w-3xl mx-auto text-lg text-gray-700">
+              AI Gateway offers a comprehensive suite of features designed to streamline your AI model management and
+              enhance your application's performance.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- 1. RAG Support -->
+            <div class="bg-white p-8 rounded-lg shadow-md transition-all duration-300">
+              <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                <i class="ri-search-eye-line ri-xl text-primary"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Built-in RAG Support</h3>
+              <p class="text-gray-700">Enhance your AI models with built-in Retrieval-Augmented Generation (RAG) support
+                for more accurate and context-aware responses.</p>
+            </div>
+
+            <!-- 2. AI Personalities -->
+            <div class="bg-white p-8 rounded-lg shadow-md transition-all duration-300">
+              <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                <i class="ri-user-voice-line ri-xl text-primary"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Purpose-Driven AI Personalities</h3>
+              <p class="text-gray-700">Create AI personalities tailored to specific tasks, improving user engagement and
+                relevance.</p>
+            </div>
+
+            <!-- 3. Tool Execution -->
+            <div class="bg-white p-8 rounded-lg shadow-md transition-all duration-300">
+              <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                <i class="ri-terminal-box-line ri-xl text-primary"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Dynamic Tool Execution via LLM</h3>
+              <p class="text-gray-700">Enable your AI models to dynamically execute tools and functions, expanding their
+                capabilities and utility.</p>
+            </div>
+
+            <!-- 4. Query Refinement -->
+            <div class="bg-white p-8 rounded-lg shadow-md transition-all duration-300">
+              <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                <i class="ri-filter-line ri-xl text-primary"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">AI-Powered Query Refinement</h3>
+              <p class="text-gray-700">Refine user queries using AI to improve search accuracy and deliver more relevant
+                results.</p>
+            </div>
+
+            <!-- 5. Unified API -->
+            <div class="bg-white p-8 rounded-lg shadow-md transition-all duration-300">
+              <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                <i class="ri-link-m ri-xl text-primary"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Unified API</h3>
+              <p class="text-gray-700">Access all your AI models through a single, unified API endpoint.</p>
+            </div>
+
+            <!-- 6. Model Switching -->
+            <div class="bg-white p-8 rounded-lg shadow-md transition-all duration-300">
+              <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                <i class="ri-shuffle-line ri-xl text-primary"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Model Switching</h3>
+              <p class="text-gray-700">Seamlessly switch between different AI models without altering your code.</p>
+            </div>
+
+            <!-- 7. Cost Management -->
+            <div class="bg-white p-8 rounded-lg shadow-md transition-all duration-300">
+              <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                <i class="ri-money-dollar-circle-line ri-xl text-primary"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Cost Management</h3>
+              <p class="text-gray-700">Effectively manage and optimize costs associated with AI model usage.</p>
+            </div>
+
+            <!-- 8. Security -->
+            <div class="bg-white p-8 rounded-lg shadow-md transition-all duration-300">
+              <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                <i class="ri-shield-check-line ri-xl text-primary"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Security</h3>
+              <p class="text-gray-700">Ensure the security and privacy of your AI models and data.</p>
+            </div>
+
+            <!-- 9. Caching -->
+            <div class="bg-white p-8 rounded-lg shadow-md transition-all duration-300">
+              <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                <i class="ri-database-2-line ri-xl text-primary"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Caching</h3>
+              <p class="text-gray-700">Improve performance and reduce latency with built-in caching mechanisms.</p>
+            </div>
+
+            <!-- 10. Analytics -->
+            <div class="bg-white p-8 rounded-lg shadow-md transition-all duration-300">
+              <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                <i class="ri-bar-chart-2-line ri-xl text-primary"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Analytics</h3>
+              <p class="text-gray-700">Gain insights into model usage, performance, and cost with comprehensive
+                analytics.</p>
+            </div>
+
+            <!-- 11. SDK and Support -->
+            <div class="bg-white p-8 rounded-lg shadow-md transition-all duration-300">
+              <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                <i class="ri-tools-line ri-xl text-primary"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">SDK and Support</h3>
+              <p class="text-gray-700">Integrate AI Gateway easily with your applications using our SDK and dedicated
+                support.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div>
+            <a href="https://www.krishnaapihub.com/#"
+              class="text-2xl font-[&#39;Pacifico&#39;] text-white mb-4 block">Krishna API HUB</a>
+            <p class="text-gray-400 mb-6">Empowering startups with scalable backend solutions and API development.</p>
+            <div class="flex space-x-4">
+              <a href="https://www.krishnaapihub.com/#"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+                <i class="ri-twitter-x-line"></i>
+              </a>
+              <a href="https://www.krishnaapihub.com/#"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+                <i class="ri-linkedin-line"></i>
+              </a>
+              <a href="https://www.krishnaapihub.com/#"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+                <i class="ri-github-line"></i>
+              </a>
+              <a href="https://www.instagram.com/krishna.api.hub/"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+                <i class="ri-instagram-line"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Services</h3>
+            <ul class="space-y-2">
+              <li><a href="https://www.krishnaapihub.com/#" class="text-gray-400 hover:text-white transition-colors">API
+                  Development</a></li>
+              <li><a href="https://www.krishnaapihub.com/#" class="text-gray-400 hover:text-white transition-colors">AI
+                  Integration</a></li>
+              <li><a href="https://www.krishnaapihub.com/#"
+                  class="text-gray-400 hover:text-white transition-colors">Chatbot Development</a></li>
+              <li><a href="https://www.krishnaapihub.com/#"
+                  class="text-gray-400 hover:text-white transition-colors">Cloud Infrastructure</a></li>
+              <li><a href="https://www.krishnaapihub.com/#" class="text-gray-400 hover:text-white transition-colors">Web
+                  Applications</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Company</h3>
+            <ul class="space-y-2">
+              <li><a href="https://www.krishnaapihub.com/#"
+                  class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+              <li><a href="https://www.krishnaapihub.com/#"
+                  class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+              <li><a href="https://www.krishnaapihub.com/#"
+                  class="text-gray-400 hover:text-white transition-colors">Careers</a></li>
+              <li><a href="https://www.krishnaapihub.com/#"
+                  class="text-gray-400 hover:text-white transition-colors">Press</a></li>
+              <li><a href="https://www.krishnaapihub.com/#"
+                  class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p class="text-gray-400 mb-4 md:mb-0">© 2025 Krishna API HUB. All rights reserved.</p>
+          <div class="flex items-center space-x-4">
+            <div class="flex items-center">
+              <i class="ri-visa-line ri-lg mr-2"></i>
+              <i class="ri-mastercard-line ri-lg mr-2"></i>
+              <i class="ri-paypal-line ri-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script id="mobileMenuScript">
+      document.addEventListener('DOMContentLoaded', function () {
+        const mobileMenuButton = document.getElementById('mobileMenuButton');
+        const mobileMenu = document.getElementById('mobileMenu');
+        mobileMenuButton.addEventListener('click', function () {
+          mobileMenu.classList.toggle('hidden');
+          if (mobileMenu.classList.contains('hidden')) {
+            mobileMenuButton.innerHTML = '<i class="ri-menu-line ri-lg"></i>';
+          } else {
+            mobileMenuButton.innerHTML = '<i class="ri-close-line ri-lg"></i>';
+          }
+        });
+        // Close mobile menu when clicking on a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+          link.addEventListener('click', function () {
+            mobileMenu.classList.add('hidden');
+            mobileMenuButton.innerHTML = '<i class="ri-menu-line ri-lg"></i>';
+          });
+        });
+      });
+    </script>
+    <script id="smoothScrollScript">
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop - 80, // Adjust for header height
+                behavior: 'smooth'
+              });
+            }
+          });
+        });
+      });
+    </script>
+    <script id="formValidationScript">
+      const contactForm = document.getElementById('contactForm');
+      async function handleSubmit(event) {
+        if (contactForm) {
+          event.preventDefault();
+          // Basic validation
+          const name = document.getElementById('name').value;
+          const email = document.getElementById('email').value;
+          const message = document.getElementById('message').value;
+          let isValid = true;
+          if (!name.trim()) {
+            isValid = false;
+            document.getElementById('name').classList.add('border-red-500');
+          } else {
+            document.getElementById('name').classList.remove('border-red-500');
+          }
+          if (!email.trim() || !email.includes('@')) {
+            isValid = false;
+            document.getElementById('email').classList.add('border-red-500');
+          } else {
+            document.getElementById('email').classList.remove('border-red-500');
+          }
+          if (!message.trim()) {
+            isValid = false;
+            document.getElementById('message').classList.add('border-red-500');
+          } else {
+            document.getElementById('message').classList.remove('border-red-500');
+          }
+          if (isValid) {
+            var data = new FormData(event.target);
+            fetch(event.target.action, {
+              method: contactForm.method,
+              body: data,
+              headers: {
+                'Accept': 'application/json'
+              }
+            }).then(response => {
+              if (response.ok) {
+                //status.innerHTML = "Thanks for your submission!";
+                contactForm.innerHTML = "";
+
+                // Create wrapper
+                const wrapper = document.createElement("div");
+                wrapper.className = "bg-green-50 border border-green-200 text-green-800 rounded-lg p-6 text-center";
+
+                // Checkmark icon container
+                const iconWrapper = document.createElement("div");
+                iconWrapper.className = "w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4";
+
+                const icon = document.createElement("i");
+                icon.className = "ri-check-line ri-2x text-green-500";
+                iconWrapper.appendChild(icon);
+
+                // Title
+                const title = document.createElement("h3");
+                title.className = "text-xl font-semibold mb-2";
+                title.textContent = "Message Sent Successfully!";
+
+                // Message
+                const message = document.createElement("p");
+                message.className = "mb-4";
+                message.textContent = "Thank you for reaching out. We'll get back to you within 24 hours.";
+
+                // Button
+                const button = document.createElement("button");
+                button.type = "button";
+                button.className = "px-6 py-2 bg-green-600 text-white font-medium rounded-button hover:bg-green-700 transition-colors whitespace-nowrap";
+                button.textContent = "Send Another Message";
+                button.onclick = () => location.reload();
+
+                // Append all elements
+                wrapper.appendChild(iconWrapper);
+                wrapper.appendChild(title);
+                wrapper.appendChild(message);
+                wrapper.appendChild(button);
+                contactForm.appendChild(wrapper);
+                contactForm.reset()
+              } else {
+                response.json().then(data => {
+                  if (Object.hasOwn(data, 'errors')) {
+                    contactForm.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                  } else {
+                    contactForm.innerHTML = "Oops! There was a problem submitting your form"
+                  }
+                })
+              }
+            }).catch(error => {
+              contactForm.innerHTML = "Oops! There was a problem submitting your form"
+            });
+          }
+
+        }
+      }
+      contactForm.addEventListener("submit", handleSubmit)
+
+    </script>
+
+
+  </section>
+</body>
+
+</html>
