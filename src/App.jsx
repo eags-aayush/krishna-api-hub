@@ -42,7 +42,7 @@ function App() {
   return (
     <>
       {/* Gooey Background - Fixed */}
-      <div className="fixed top-0 left-0 w-screen h-screen -z-10 overflow-hidden pointer-events-none">
+      <div className="fixed top-0 left-0 w-screen h-full -z-10 overflow-hidden pointer-events-none">
         {/* Goo Filter */}
         <svg className="w-0 h-0">
           <defs>
