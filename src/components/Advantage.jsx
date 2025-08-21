@@ -36,7 +36,7 @@ const advantageData = [
 const Advantage = () => {
   return (
     <section
-      id="advantages"
+      id="whyus"
       className="py-24 relative text-text px-6"
     >
         {/* Header */}

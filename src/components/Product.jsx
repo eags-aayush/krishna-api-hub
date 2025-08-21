@@ -61,7 +61,7 @@ const productData = [
 const Product = () => {
   return (
     <section
-      id="product"
+      id="products"
       className="py-24 relative text-text px-6"
     >
         {/* Header */}

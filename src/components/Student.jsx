@@ -3,7 +3,7 @@ import React from 'react'
 const Student = () => {
   return (
     <section
-      id="program"
+      id="startupprogram"
       className="py-24 relative text-text px-6"
     >
         <div className="max-w-6xl mx-auto rounded-2xl bg-white/10 backdrop-blur-lg border border-white/10 p-10 shadow-xl">
