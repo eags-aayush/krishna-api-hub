@@ -2,14 +2,7 @@ import React from 'react'
 
 const Form = () => {
   return (
-    <section id="contact" className="py-24 relative text-text">
-      {/* Background Glow */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute w-[500px] h-[500px] bg-primary/20 rounded-full blur-[180px] -top-40 left-20 animate-pulse"></div>
-        <div className="absolute w-[400px] h-[400px] bg-purple-500/20 rounded-full blur-[160px] bottom-20 right-10 animate-pulse delay-300"></div>
-      </div>
-
-      <div className="container mx-auto px-6">
+    <section id="contact" className="py-24 relative text-text px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-extrabold mb-4 bg-gradient-to-r from-primary to-purple-400 bg-clip-text text-transparent">
             Let's Build Your Backend
@@ -143,7 +136,6 @@ const Form = () => {
             </div>
           </div>
         </div>
-      </div>
     </section>
   )
 }

@@ -4,15 +4,8 @@ const Student = () => {
   return (
     <section
       id="program"
-      className="py-24 relative text-text"
+      className="py-24 relative text-text px-6"
     >
-      {/* Background Glow */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute w-[600px] h-[600px] bg-primary/20 rounded-full blur-[180px] -top-40 left-20 animate-pulse"></div>
-        <div className="absolute w-[500px] h-[500px] bg-purple-500/20 rounded-full blur-[180px] bottom-10 right-20 animate-pulse delay-300"></div>
-      </div>
-
-      <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto rounded-2xl bg-white/10 backdrop-blur-lg border border-white/10 p-10 shadow-xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Text Section */}
@@ -67,7 +60,6 @@ const Student = () => {
             </div>
           </div>
         </div>
-      </div>
     </section>
   )
 }

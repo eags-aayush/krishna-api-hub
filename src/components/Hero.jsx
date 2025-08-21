@@ -2,13 +2,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[750px] flex items-center overflow-hidden">
-      {/* Background Glow Effects */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute w-[800px] h-[800px] bg-primary/30 rounded-full blur-[160px] -top-40 -left-40 animate-pulse"></div>
-        <div className="absolute w-[600px] h-[600px] bg-purple-500/20 rounded-full blur-[140px] top-20 right-[-200px] animate-pulse delay-300"></div>
-      </div>
-
+    <section className="relative flex items-center">
       <div className="container mx-auto px-6 w-full grid md:grid-cols-2 items-center gap-12">
         {/* Left Content */}
         <div className="max-w-3xl text-center md:text-left">

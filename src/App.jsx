@@ -42,7 +42,7 @@ function App() {
   return (
     <>
       {/* Gooey Background - Fixed */}
-      <div className="fixed top-0 left-0 w-screen h-full -z-10 overflow-hidden pointer-events-none">
+      <div className="fixed top-0 left-0 w-screen h-screen -z-10 overflow-hidden pointer-events-none">
         {/* Goo Filter */}
         <svg className="w-0 h-0">
           <defs>
@@ -60,7 +60,7 @@ function App() {
         </svg>
 
         {/* Gooey Gradient Background */}
-        <div className="w-full h-full gradient-bg">
+        <div className="w-screen h-full gradient-bg">
           <div className="gradients-container">
             <div className="g1" />
             <div className="g2" />

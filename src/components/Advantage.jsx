@@ -37,15 +37,8 @@ const Advantage = () => {
   return (
     <section
       id="advantages"
-      className="py-24 relative text-text"
+      className="py-24 relative text-text px-6"
     >
-      {/* Background Glow */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute w-[600px] h-[600px] bg-primary/20 rounded-full blur-[180px] -top-40 left-20 animate-pulse"></div>
-        <div className="absolute w-[500px] h-[500px] bg-purple-500/20 rounded-full blur-[180px] bottom-10 right-20 animate-pulse delay-300"></div>
-      </div>
-
-      <div className="container mx-auto px-6 relative">
         {/* Header */}
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-extrabold mb-6 bg-gradient-to-r from-primary to-purple-400 bg-clip-text text-transparent">
@@ -79,7 +72,6 @@ const Advantage = () => {
             </div>
           ))}
         </motion.div>
-      </div>
     </section>
   );
 };
