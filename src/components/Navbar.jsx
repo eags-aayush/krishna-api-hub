@@ -2,6 +2,7 @@ import React, { useState } from "react"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const [isDark, setIsDark] = useState(false)
 
   return (
     <nav
@@ -36,6 +37,10 @@ const Navbar = () => {
           <a href="#contact" className="text-text hover:text-primary transition-colors">
             Contact
           </a>
+          <button className="text-text" onClick={() => {document.documentElement.classList.toggle("dark"); setIsDark(!isDark)}}>
+            {isDark ? "Dark" : "Light"}
+            </button>
+
         </div>
 
         {/* Right Actions */}
