@@ -37,9 +37,9 @@ const Navbar = () => {
           <a href="#contact" className="text-text hover:text-primary transition-colors">
             Contact
           </a>
-          <button className="text-text" onClick={() => {document.documentElement.classList.toggle("dark"); setIsDark(!isDark)}}>
-            {isDark ? "Dark" : "Light"}
-            </button>
+          <button className="cursor-pointer border rounded-full p-1 text-text hover:text-primary" onClick={() => { document.documentElement.classList.toggle("dark"); setIsDark(!isDark) }}>
+            {isDark ? <i className="ri-sun-line ri-xl text-text hover:text-primary"></i> : <i className="ri-moon-line ri-xl text-text hover:text-primary"></i>}
+          </button>
 
         </div>
 
@@ -62,9 +62,8 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden bg-white/95 backdrop-blur-md shadow-md transition-all duration-300 overflow-hidden ${
-          isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-        }`}
+        className={`md:hidden bg-bg/95 backdrop-blur-md shadow-md transition-all duration-300 overflow-hidden ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          }`}
       >
         <div className="container mx-auto px-6 py-4 flex flex-col space-y-4">
           <a href="#about" className="text-text hover:text-primary transition-colors">
@@ -85,6 +84,9 @@ const Navbar = () => {
           <a href="#contact" className="text-text hover:text-primary transition-colors">
             Contact
           </a>
+          <button className="rounded-lg text-left text-text" onClick={() => { document.documentElement.classList.toggle("dark"); setIsDark(!isDark) }}>
+            {isDark ? <i className="ri-sun-line ri-xl text-text"></i> : <i className="ri-moon-line ri-xl text-text"></i>} Theme
+          </button>
           <a
             href="#contact"
             className="block px-5 py-2 bg-gradient-to-r from-primary to-purple-500 text-white font-medium text-center rounded-full shadow-md hover:shadow-lg transition-transform hover:-translate-y-0.5"
