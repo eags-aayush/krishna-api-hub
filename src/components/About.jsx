@@ -35,7 +35,7 @@ const About = () => {
             Your Idea, Our Code. Let's Build Together.
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-purple-400 mx-auto mb-8"></div>
-          <p className="max-w-3xl mx-auto text-lg text-gray-300">
+          <p className="max-w-3xl mx-auto text-lg text-text">
             At <span className="text-primary font-semibold">Krishna API HUB</span>, we empower startups and student entrepreneurs to transform their ideas into robust digital products without the burden of high development costs. Our mission is to democratize technology access for early-stage innovators.
           </p>
         </div>
@@ -48,12 +48,12 @@ const About = () => {
               className="bg-white/10 backdrop-blur-lg border border-white/10 p-8 rounded-2xl shadow-lg hover:shadow-text/30 transition-all transform hover:-translate-y-2 hover:scale-[1.02]"
             >
               <div className="w-14 h-14 bg-gradient-to-r from-primary to-purple-500 rounded-xl flex items-center justify-center mb-6">
-                <i className={`${item.icon} ri-xl text-white`}></i>
+                <i className={`${item.icon} ri-xl text-text`}></i>
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">
+              <h3 className="text-xl font-semibold text-text mb-3">
                 {item.title}
               </h3>
-              <p className="text-gray-300">{item.desc}</p>
+              <p className="text-text">{item.desc}</p>
             </div>
           ))}
         </div>

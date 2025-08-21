@@ -15,7 +15,7 @@ const Form = () => {
             Let's Build Your Backend
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-8"></div>
-          <p className="max-w-3xl mx-auto text-lg text-gray-300">
+          <p className="max-w-3xl mx-auto text-lg text-text">
             Ready to supercharge your startup? Get in touch to discuss your project or schedule a free consultation call.
           </p>
         </div>
@@ -25,42 +25,42 @@ const Form = () => {
           <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/10 shadow-xl">
             <form id="contactForm" className="space-y-6" action="https://formspree.io/f/xrbknpzw" method="POST">
               <div>
-                <label htmlFor="name" className="block text-gray-300 font-medium mb-2">Name</label>
+                <label htmlFor="name" className="block text-text font-medium mb-2">Name</label>
                 <input
                   type="text"
                   id="name"
                   name="name"
                   placeholder="Your name"
-                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-gray-600 focus:ring-2 focus:ring-primary/40 focus:outline-none text-white placeholder-gray-400"
+                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-gray-600 focus:ring-2 focus:ring-primary/40 focus:outline-none text-text placeholder-gray-500"
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-gray-300 font-medium mb-2">Email</label>
+                <label htmlFor="email" className="block text-text font-medium mb-2">Email</label>
                 <input
                   type="email"
                   id="email"
                   name="email"
                   placeholder="your.email@example.com"
-                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-gray-600 focus:ring-2 focus:ring-primary/40 focus:outline-none text-white placeholder-gray-400"
+                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-gray-600 focus:ring-2 focus:ring-primary/40 focus:outline-none text-text placeholder-gray-500"
                 />
               </div>
               <div>
-                <label htmlFor="phonenumber" className="block text-gray-300 font-medium mb-2">Phone Number</label>
+                <label htmlFor="phonenumber" className="block text-text font-medium mb-2">Phone Number</label>
                 <input
                   type="text"
                   id="phonenumber"
                   name="phonenumber"
                   placeholder="+91"
-                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-gray-600 focus:ring-2 focus:ring-primary/40 focus:outline-none text-white placeholder-gray-400"
+                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-gray-600 focus:ring-2 focus:ring-primary/40 focus:outline-none text-text placeholder-gray-500"
                 />
               </div>
               <div>
-                <label htmlFor="projectType" className="block text-gray-300 font-medium mb-2">Project Type</label>
+                <label htmlFor="projectType" className="block text-text font-medium mb-2">Project Type</label>
                 <div className="relative">
                   <select
                     id="projectType"
                     name="projectType"
-                    className="w-full px-4 py-3 rounded-lg bg-white/5 border border-gray-600 text-white focus:ring-2 focus:ring-primary/40 appearance-none"
+                    className="w-full px-4 py-3 rounded-lg bg-white/5 border border-gray-600 text-text focus:ring-2 focus:ring-primary/40 appearance-none"
                   >
                     <option value="" disabled>Select your project type</option>
                     <option value="mvp">MVP Development</option>
@@ -70,27 +70,27 @@ const Form = () => {
                     <option value="other">Other</option>
                   </select>
                   <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-                    <i className="ri-arrow-down-s-line text-gray-400"></i>
+                    <i className="ri-arrow-down-s-line text-text"></i>
                   </div>
                 </div>
               </div>
               <div>
-                <label htmlFor="message" className="block text-gray-300 font-medium mb-2">Message</label>
+                <label htmlFor="message" className="block text-text font-medium mb-2">Message</label>
                 <textarea
                   id="message"
                   name="message"
                   rows="4"
                   placeholder="Tell us about your project..."
-                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-gray-600 focus:ring-2 focus:ring-primary/40 focus:outline-none text-white placeholder-gray-400"
+                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-gray-600 focus:ring-2 focus:ring-primary/40 focus:outline-none text-text placeholder-gray-500"
                 ></textarea>
               </div>
               <div className="flex items-center space-x-2">
                 <input type="checkbox" name="subscribe" className="h-4 w-4 rounded border-gray-500 text-primary focus:ring-primary" />
-                <label className="text-gray-300">Subscribe to our newsletter for startup tips and resources</label>
+                <label className="text-text">Subscribe to our newsletter for startup tips and resources</label>
               </div>
               <button
                 type="submit"
-                className="w-full px-6 py-3 bg-gradient-to-r from-primary to-purple-500 text-white font-medium rounded-full hover:shadow-lg hover:shadow-primary/40 transition-all transform hover:-translate-y-1"
+                className="w-full px-6 py-3 bg-gradient-to-r from-primary to-purple-500 text-text font-medium rounded-full hover:shadow-lg hover:shadow-primary/40 transition-all transform hover:-translate-y-1"
               >
                 Schedule a Free Call
               </button>
@@ -120,12 +120,12 @@ const Form = () => {
                 }
               ].map((step, i) => (
                 <div key={i} className="flex items-start group">
-                  <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-r from-primary to-purple-500 rounded-full flex items-center justify-center mr-4 font-bold text-white">
+                  <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-r from-primary to-purple-500 rounded-full flex items-center justify-center mr-4 font-bold text-text">
                     {i + 1}
                   </div>
                   <div>
-                    <h4 className="font-semibold text-white mb-1">{step.title}</h4>
-                    <p className="text-gray-300 group-hover:text-gray-200">{step.desc}</p>
+                    <h4 className="font-semibold text-text mb-1">{step.title}</h4>
+                    <p className="text-text group-hover:font-bold">{step.desc}</p>
                   </div>
                 </div>
               ))}
@@ -133,10 +133,10 @@ const Form = () => {
 
             {/* Contact Info */}
             <div className="mt-10 pt-8 border-t border-gray-700">
-              <h4 className="font-semibold text-white mb-4">Contact Information</h4>
+              <h4 className="font-semibold text-text mb-4">Contact Information</h4>
               <div className="flex items-center space-x-3">
                 <i className="ri-mail-line text-primary text-xl"></i>
-                <a href="mailto:sushmat6699@gmail.com" className="text-gray-300 hover:text-white">
+                <a href="mailto:sushmat6699@gmail.com" className="text-text hover:text-text">
                   sushmat6699@gmail.com
                 </a>
               </div>

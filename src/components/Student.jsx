@@ -20,7 +20,7 @@ const Student = () => {
               <h2 className="text-4xl font-extrabold mb-6 bg-gradient-to-r from-primary to-purple-400 bg-clip-text text-transparent">
                 Student & Startup Program
               </h2>
-              <p className="text-gray-300 mb-6">
+              <p className="text-text mb-6">
                 We believe in supporting the next generation of innovators. Our special program for students and early-stage startups offers significant advantages to help you get your idea off the ground.
               </p>
 
@@ -37,9 +37,9 @@ const Student = () => {
                     className="flex items-start group hover:translate-x-1 transition-transform"
                   >
                     <div className="flex-shrink-0 w-7 h-7 flex items-center justify-center mr-3 mt-0.5 rounded-full bg-gradient-to-r from-primary to-purple-500">
-                      <i className="ri-check-line ri-lg text-white"></i>
+                      <i className="ri-check-line ri-lg text-text"></i>
                     </div>
-                    <p className="text-gray-300 group-hover:text-white transition-colors">
+                    <p className="text-text group-hover:text-text hover:font-bold transition-colors">
                       {point}
                     </p>
                   </div>
@@ -49,7 +49,7 @@ const Student = () => {
               {/* CTA Button */}
               <a
                 href="https://www.krishnaapihub.com/#contact"
-                className="inline-block px-8 py-3 bg-gradient-to-r from-primary to-purple-500 text-white font-medium rounded-full hover:shadow-lg hover:shadow-primary/40 transition-all transform hover:-translate-y-1"
+                className="inline-block px-8 py-3 bg-gradient-to-r from-primary to-purple-500 text-text font-medium rounded-full hover:shadow-lg hover:shadow-primary/40 transition-all transform hover:-translate-y-1"
               >
                 Apply Now
               </a>
