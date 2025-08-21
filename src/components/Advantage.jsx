@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const advantageData = [
   {
     title: "Built for Startups",
@@ -56,7 +58,12 @@ const Advantage = () => {
         </div>
 
         {/* Advantage Cards */}
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <motion.div 
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.2 }}
+          className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {advantageData.map((item, index) => (
             <div
               key={index}
@@ -71,7 +78,7 @@ const Advantage = () => {
               <p className="text-text">{item.desc}</p>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

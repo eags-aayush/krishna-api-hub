@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const aboutData = [
   {
     title: "Technical Excellence",
@@ -41,7 +43,14 @@ const About = () => {
         </div>
 
         {/* Feature Cards */}
-        <div className="grid md:grid-cols-3 gap-10">
+
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.2 }}
+          className="grid md:grid-cols-3 gap-10"
+        >
           {aboutData.map((item, index) => (
             <div
               key={index}
@@ -56,7 +65,7 @@ const About = () => {
               <p className="text-text">{item.desc}</p>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

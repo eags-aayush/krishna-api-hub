@@ -1,4 +1,4 @@
-import React from "react"
+import { motion } from "framer-motion";
 
 const productData = [
   {
@@ -84,7 +84,12 @@ const Product = () => {
         </div>
 
         {/* Product Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <motion.div 
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.2 }}
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {productData.map((item, index) => (
             <div
               key={index}
@@ -97,7 +102,7 @@ const Product = () => {
               <p className="text-text">{item.desc}</p>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   )
